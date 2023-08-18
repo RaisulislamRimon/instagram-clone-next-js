@@ -3,7 +3,7 @@ import { BeakerIcon } from '@heroicons/react/24/solid'
 
 export default function Header(){
   return (
-    <div className="flex items-center justify-between max-w-6xl mx-auto">
+    <div className="flex items-center justify-between max-w-6xl mx-4 lg:mx-auto">
       {/* left */}
       <div className="h-24 w-24 relative hidden lg:inline-grid cursor-pointer">
         <Image 
@@ -33,9 +33,15 @@ export default function Header(){
       </div>
       
       {/* right */}  
-      <h1>
-        Right side
-      </h1>          
+      <div className="flex space-x-4 items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="hidden md:inline-flex w-6 h-6 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <img src="https://i.ibb.co/4WmZwhH/rimon.jpg" alt="profile-photo" className="h-10 w-10 rounded-full cursor-pointer hover:scale-125 transition-transform duration-200 ease-out" />
+      </div>          
     </div> 
   )
 }
